@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../sanphamcuoikhoa"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jsi"
+	}
+}
