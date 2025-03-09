@@ -87,20 +87,26 @@ function signup() {
 }
 
 // Xử lý đăng nhập
-function login() {
+function showLogin() {
     const email = document.getElementById("login-email").value;
     const password = document.getElementById("login-password").value;
 
+
+    // 
+}
+
     if (!email || !password) {
-        showMessage("error", "❌ Vui lòng nhập đầy đủ Email và Mật khẩu!");
-        return;
-    }
+        showMessage("error", " Vui lòng nhập đầy đủ Email và Mật khẩu!");
+        return ;
+    }     
+    
 
     auth.signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
-            showMessage("success", `✅ Đăng nhập thành công! Chào ${userCredential.user.email}`);
+            showMessage("success", `Đăng nhập thành công! Chào ${userCredential.user.email}`);
         })
         .catch((error) => {
-            showMessage("error", `❌ Lỗi: ${error.message}`);
+            showMessage("error", ` Lỗi: ${error.message}`);
         });
-}
+
+
