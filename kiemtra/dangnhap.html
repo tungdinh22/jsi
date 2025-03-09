@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập với Firebase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Mật khẩu">
+
+            <button onclick="login()" >Login</button>
+            <p>Chưa có tài khoản? <a href="dangki.html" onclick="showSignup()">Đăng ký</a></p>
+            <button onclick="loginWithGoogle()">Login with Google</button>
+        </div>
+
+        <div class="signup-box" style="display: none;">
+            <h2>Signup</h2>
+            <input type="email" id="signup-email" placeholder="Email">
+            <input type="password" id="signup-password" placeholder="Mật khẩu">
+            <input type="password" id="confirm-password" placeholder="Nhập lại mật khẩu">
+            <button onclick="signup()">Signup</button>
+            <p>Đã có tài khoản? <a href="#" onclick="showLogin()">Đăng nhập</a></p>
+        </div>
+    </div>
+    
+    
+    <script   type="module" src="./dangnhap.js"> </script>
+</body>
+</html>

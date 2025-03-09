@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="home">
+        <h1>Ứng dụng Quiz</h1>
+        <button onclick="startQuiz()">Bắt đầu Quiz</button>
+        <button onclick="showLeaderboard()">Xem bảng xếp hạng</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <h2 id="question">Câu hỏi sẽ hiển thị ở đây</h2>
+        <div id="answers"></div>
+        <button id="next-btn" onclick="nextQuestion()">Câu tiếp theo</button>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <h2>Điểm của bạn: <span id="score"></span></h2>
+        <input type="text" id="username" placeholder="Nhập tên của bạn">
+        <button onclick="saveScore()">Lưu điểm</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
